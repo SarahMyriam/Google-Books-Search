@@ -6,6 +6,7 @@ import Form from "../components/Form";
 import API from "../utils/API";
 import { List } from "../components/List";
 import { Container, Row, Col } from "../components/Grid";
+import Book from "../components/Book/book";
 
 class SearchBook extends Component {
     //create state for books, query, and message
@@ -90,7 +91,7 @@ class SearchBook extends Component {
                             {this.state.books.length ? (
                                 <List>
                                     {this.state.books.map(book => (
-                                        <DisplayBook
+                                        <Book
                                             key={book.id}
                                             title={book.volumeInfo.title}
                                             authors={book.volumeInfo.authors}

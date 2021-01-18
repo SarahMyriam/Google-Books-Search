@@ -1,10 +1,11 @@
-
 import './App.css';
+import SearchBook from "./pages/SearchBook";
 
 function App() {
+
   return (
     <div>
-      BooksLover
+      <SearchBook/>
     </div>
   );
 }
