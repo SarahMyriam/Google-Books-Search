@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card({title,childre}){
+function Card({title,children}){
     return(
         <div className="card mt-2">
             <div className ="card-header">
