@@ -3,10 +3,10 @@ import Jumbotron from "../components/Jumbotron";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
 import Form from "../components/Form";
-import API from "../utils/API";
 import { List } from "../components/List";
 import { Container, Row, Col } from "../components/Grid";
 import Book from "../components/Book/book";
+import API  from "../utils/API";
 
 class SearchBook extends Component {
     //create state for books, query, and message
@@ -27,7 +27,7 @@ class SearchBook extends Component {
 
     //get books
     getBooks = () => {
-        API.getBooks(this.state.q)
+        API.getBook(this.state.q)
             .then(res =>
                 this.setState({
                     books: res.data
